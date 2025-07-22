@@ -17,13 +17,13 @@ runs:
     #   shell: bash
     #   run: pip install -r ${{ github.action_path }}/requirements.txt
       # run: pip install -r requirements.txt
-    - name: Copy requirements.txt to workspace
+    - name: Debug workspace
       shell: bash
-      run: cp "${{ github.action_path }}/requirements.txt" "${{ github.workspace }}/requirements.txt"
+      run: ls -l ${{ github.workspace }}
 
-    - name: Install Dependencies
+    - name: Debug action path
       shell: bash
-      run: pip install -r "${{ github.workspace }}/requirements.txt"
+      run: ls -l ${{ github.action_path }}
 
 
     - name: Python Version
