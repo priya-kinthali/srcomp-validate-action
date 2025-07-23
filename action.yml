@@ -3,9 +3,6 @@ description: A GitHub Action to validate a compstate.
 runs:
   using: composite
   steps:
-    - name: Debug file existence
-      shell: bash
-      run: ls -al ${{ github.action_path }}/subdirectory
     - name: Set up Python
       # uses: actions/setup-python@v5
       uses: priya-kinthali/setup-python@sample-361-multi
