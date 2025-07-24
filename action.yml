@@ -16,7 +16,7 @@ runs:
     
     - name: Install Dependencies
       shell: bash
-      run: pip install -r ${{ github.action_path }}/directory/requirements-dev.txt
+      run: pip install -r ${{ github.action_path }}/requirements-test.txt
 
     - name: Python Version
       shell: bash
