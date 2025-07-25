@@ -20,6 +20,7 @@ jobs:
         cache: pip
         cache-dependency-path: |
           **/setup.cfg
+          **/requirements.txt
 
     - name: Install Dependencies
       shell: bash
