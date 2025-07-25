@@ -21,7 +21,6 @@ jobs:
         cache-dependency-path: |
           **/setup.cfg
           **/requirements.txt
-          **/requirements-dev.txt
           **/requirements-test.txt
 
     - name: Install Dependencies
