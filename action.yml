@@ -11,7 +11,7 @@ runs:
         cache-dependency-path: |
           ${{ github.action_path }}/demo/subdemo/setup.cfg
           ${{ github.action_path }}/subdirectory/requirements-dev.txt
-          ${{ github.action_path }}/*/requirements.txt    
+          ${{ github.action_path }}/**/requirements.txt    
 
     
     - name: Install Dependencies
