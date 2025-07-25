@@ -10,8 +10,9 @@ runs:
         cache: pip
         cache-dependency-path: |
           ${{ github.action_path }}/**/setup.cfg
-          ${{ github.action_path }}/**/requirements*.txt
-
+          ${{ github.action_path }}/**/requirements.txt
+          ${{ github.action_path }}/**/requirements-dev.txt
+          ${{ github.action_path }}/**/requirements-test.txt
     
     - name: Install Dependencies
       shell: bash
