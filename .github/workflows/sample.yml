@@ -23,11 +23,11 @@ jobs:
         #   demo/subdemo/setup.cfg
         #   subdirectory/requirements-dev.txt
         #   **/requirements.txt  
-        pip-install: -r  demo/subdemo/setup.cfg
+        pip-install: -r  demo/subdemo/requirements-sample.txt
 
-    - name: Install Dependencies
-      shell: bash
-      run: pip install -r demo/subdemo/setup.cfg
+    # - name: Install Dependencies
+    #   shell: bash
+    #   run: pip install -r requirements-sample.txt
 
     - name: Python Version
       shell: bash
