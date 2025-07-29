@@ -12,7 +12,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
-      uses: actions/setup-python@v5
+      # uses: actions/setup-python@v5
+      uses: priyagupta108/setup-python@pip-version-input
       # uses: priya-kinthali/setup-python@sample-361-multi
       # uses: actions/setup-python@main
 
