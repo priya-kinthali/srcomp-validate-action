@@ -12,15 +12,19 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
-      # uses: actions/setup-python@v5
+      uses: actions/setup-python@v5
       # uses: priya-kinthali/setup-python@sample-361-multi
       # uses: actions/setup-python@main
 
-      uses: gowridurgad/setup-python@pip-install
+      # uses: gowridurgad/setup-python@pip-install
       with:
             python-version:  '3.11'
-            pip-install: -r requirements.txt
+            # pip-install: -r requirements.txt
+            pip-version: '23.2.1'
             update-environment: false
+    - name: Check pip version
+      run: pip --version
+    
     - name: Cache pip dependencies
       uses: actions/cache@v4
       with:
