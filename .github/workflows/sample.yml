@@ -20,7 +20,7 @@ jobs:
       with:
             python-version:  '3.11'
             pip-install: -r requirements.txt
-            update-environmet: false
+            update-environment: false
     - name: Cache pip dependencies
       uses: actions/cache@v4
       with:
