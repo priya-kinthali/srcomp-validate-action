@@ -19,7 +19,7 @@ jobs:
       uses: gowridurgad/setup-python@pip-install
       with:
             python-version:  '3.11'
-            # pip-install: -r requirements.txt
+            pip-install: -r requirements.txt
     - name: Cache pip dependencies
       uses: actions/cache@v4
       with:
