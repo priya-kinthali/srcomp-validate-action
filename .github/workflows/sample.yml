@@ -1,9 +1,9 @@
 name: main
 
 on:
-  push:
-    branches:
-      - test-action-361
+  # push:
+  #   branches:
+  #     - test-action-361
   pull_request:
 
 jobs:
