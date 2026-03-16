@@ -12,14 +12,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
-      uses: priya-kinthali/setup-python@test-toolkit
-      # uses: actions/setup-python@v6
+      # uses: priya-kinthali/setup-python@test-toolkit
+      uses: actions/setup-python@v6
       with:
             python-version:  '3.11'
             cache: pip
             # cache-dependency-path: ${{ github.action_path }}/requirements.txt
-            cache-dependency-path: |
-              ${{ github.action_path }}/**/requirements.txt        
+            cache-dependency-path: '**/requirements-dev.txt'
   
     # - name: Check pip version
     #   run: pip --version
