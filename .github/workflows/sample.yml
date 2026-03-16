@@ -16,14 +16,15 @@ jobs:
       uses: actions/setup-python@v6
       with:
             python-version:  '3.11'
+            cache: pip
+            cache-dependency-path: ${{ github.action_path }}/requirements.txt
   
     # - name: Check pip version
     #   run: pip --version
     
-    # - name: Install Dependencies
-    #   shell: bash
-    #   run: pip install -r requirements-sample.txt
-
+    - name: Install Dependencies
+      shell: bash
+      run: pip install -r requirements.txt
     - name: Python Version
       shell: bash
       run: python --version
