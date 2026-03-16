@@ -28,7 +28,7 @@ jobs:
     
     - name: Install Dependencies
       shell: bash
-      run: pip install -r requirements.txt
+      run: pip install -r requirements.txt demo/subdemo/setup.cfg subdirectory/requirements-dev.txt
     - name: Python Version
       shell: bash
       run: python --version
