@@ -18,10 +18,11 @@ jobs:
             python-version:  '3.11'
             cache: pip
             # cache-dependency-path: ${{ github.action_path }}/requirements.txt
-            cache-dependency-path: |
+            cache-dependency-path: |             
+              requirements.txt 
               demo/subdemo/setup.cfg
               subdirectory/requirements-dev.txt
-              requirements.txt   
+                
   
     # - name: Check pip version
     #   run: pip --version
