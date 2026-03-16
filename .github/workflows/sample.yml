@@ -19,8 +19,7 @@ jobs:
             cache: pip
             # cache-dependency-path: ${{ github.action_path }}/requirements.txt
             cache-dependency-path: |
-              ${{ github.action_path }}/**/requirements.txt  
-              ${{ github.action_path }}/**/subdemo/setup.cfg            
+              ${{ github.action_path }}/**/requirements.txt        
   
     # - name: Check pip version
     #   run: pip --version
