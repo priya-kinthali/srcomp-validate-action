@@ -4,8 +4,8 @@ runs:
   using: composite
   steps:
     - name: Set up Python
-      # uses: priya-kinthali/setup-python@test-toolkit
-      uses: actions/setup-python@v6
+      uses: priya-kinthali/setup-python@test-toolkit
+      # uses: actions/setup-python@v6
       with:
         python-version: '3.10'
         cache: pip
