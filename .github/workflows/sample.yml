@@ -1,9 +1,9 @@
 name: main
 
 on:
-  # push:
-  #   branches:
-  #     - test-action-361
+  push:
+    branches:
+      - test-action-361
   pull_request:
 
 jobs:
@@ -17,7 +17,11 @@ jobs:
       with:
             python-version:  '3.11'
             cache: pip
-            cache-dependency-path: ${{ github.action_path }}/requirements.txt
+            # cache-dependency-path: ${{ github.action_path }}/requirements.txt
+            cache-dependency-path: |
+              ${{ github.action_path }}/demo/subdemo/setup.cfg
+              ${{ github.action_path }}/subdirectory/requirements-dev.txt
+              ${{ github.action_path }}/requirements.txt   
   
     # - name: Check pip version
     #   run: pip --version
